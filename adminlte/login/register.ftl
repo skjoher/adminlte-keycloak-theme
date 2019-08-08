@@ -51,7 +51,7 @@
                     <label for="mobile" class="${properties.kcLabelClass!}">${msg("mobile")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="mobile" class="form-control ${properties.kcInputClass!}" name="mobile" value="${(register.formData.mobile!'')}" />
+                    <input type="text" id="mobile" class="form-control ${properties.kcInputClass!}" name="user.attributes.mobile" value="${(register.formData.mobile!'')}" />
                 </div>
             </div>
 
@@ -60,7 +60,7 @@
                     <label for="bloodgroup" class="${properties.kcLabelClass!}">${msg("bloodgroup")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="bloodgroup" class="form-control ${properties.kcInputClass!}" name="bloodgroup" value="${(register.formData.bloodgroup!'')}" />
+                    <input type="text" id="bloodgroup" class="form-control ${properties.kcInputClass!}" name="user.attributes.bloodgroup" value="${(register.formData.bloodgroup!'')}" />
                 </div>
             </div>
 
