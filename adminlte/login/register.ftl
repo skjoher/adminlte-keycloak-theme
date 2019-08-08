@@ -46,6 +46,24 @@
                 </div>
             </div>
 
+            <div class="register-field ${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('mobile',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcLabelWrapperClass!}">
+                    <label for="mobile" class="${properties.kcLabelClass!}">${msg("mobile")}</label>
+                </div>
+                <div class="${properties.kcInputWrapperClass!}">
+                    <input type="text" id="mobile" class="form-control ${properties.kcInputClass!}" name="mobile" value="${(register.formData.mobile!'')}" />
+                </div>
+            </div>
+
+            <div class="register-field ${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('bloodgroup',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcLabelWrapperClass!}">
+                    <label for="bloodgroup" class="${properties.kcLabelClass!}">${msg("bloodgroup")}</label>
+                </div>
+                <div class="${properties.kcInputWrapperClass!}">
+                    <input type="text" id="bloodgroup" class="form-control ${properties.kcInputClass!}" name="bloodgroup" value="${(register.formData.bloodgroup!'')}" />
+                </div>
+            </div>
+
             <#if passwordRequired>
             <div class="register-field ${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
